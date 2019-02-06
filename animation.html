@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bird Flying</title>
+  <script src="Https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery/min.js"></script>
+  <script type="text/javascript">
+        $(document).ready(function (){
+          function rgt(){
+            $('#sldr').animate({ left: "150"}, 10000, hider);
+          }
+          rgt();
+          function hider() {
+            $('#sldr').css('left', '0px');
+            rgt();
+          }
+        });
+  </script>
+</head>
+<body>
+  <p> Our pal will fly</p>
+  <form id ="form1" runat="server">
+    <div>
+      <img id="sldr" src="flying.gif" style="position:absolute" />
+    </div>
+  </form>
+</body>
+<html>
